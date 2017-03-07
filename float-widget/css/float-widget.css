@@ -5,6 +5,7 @@
 .float-widget {
     position: fixed;
     cursor: pointer;
+    z-index: 1048576;
 }
 
 .float-widget-menu {
