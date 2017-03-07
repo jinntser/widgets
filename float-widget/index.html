@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>float widget</title>
+    <link rel="stylesheet" href="css/float-widget.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="menu-icon">
+    <span class="float-widget-btn">
+        <span class="float-widget-btn-l1">
+            <span class="float-widget-btn-l2">
+                <span class="float-widget-btn-l3">
+                </span>
+            </span>
+        </span>
+    </span>
+    <nav class="menu-floating">
+        <ul>
+            <li><a>假選單</a></li>
+            <li><a>假選單</a></li>
+            <li><a>假選單</a></li>
+            <li><a>假選單</a></li>
+        </ul>
+    </nav>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/float-widget.js"></script>
+<script>
+    $(function () {
+        $('.menu-icon').floatWidget({
+            offset: 40,
+            menu: '.menu-floating'
+        });
+    })
+</script>
+</body>
+</html>

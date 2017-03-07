@@ -1,0 +1,12 @@
+.locked{
+    overflow: hidden;
+}
+
+.float-widget {
+    position: fixed;
+    cursor: pointer;
+}
+
+.float-widget-menu {
+    position: absolute;
+}

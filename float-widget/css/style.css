@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("../img/bg.jpg") no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    font-family: '微軟正黑體';
+}
+
+.menu-icon {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.float-widget-btn {
+    background-color: #213a4c;
+    border-radius: 24%;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    transition: all ease .3s;
+}
+
+.menu-icon.idle .float-widget-btn {
+    opacity: .4;
+}
+
+.float-widget-btn-l1 {
+    background-color: #506470;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    width: 74%;
+    height: 74%;
+    margin: 13%;
+    box-shadow: 0 0 2px 0 #363636;
+}
+
+.float-widget-btn-l2 {
+    background-color: #989fab;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    width: 82%;
+    height: 82%;
+    margin: 9%;
+    box-shadow: 0 0 2px 0 #363636;
+}
+
+.float-widget-btn-l3 {
+    background-color: #f6f3f0;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    width: 77%;
+    height: 77%;
+    margin: 11.5%;
+    box-shadow: 0 0 2px 0 #363636;
+}
+
+.menu-floating {
+    background-color: rgba(150, 150, 150, .7);
+    border-radius: 10px;
+    width: 200px;
+    padding: 8px;
+    display: none;
+    box-shadow: 0 0 4px 2px rgba(30, 30, 30, .24);
+}
+
+.menu-floating ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    border-top: 1px solid transparent;
+    overflow: hidden;
+}
+
+.menu-floating li {
+    list-style: none;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-floating li a {
+    display: block;
+    width: 100%;
+    padding: 3px 25px;
+    background-color: rgba(240, 240, 240, .3);
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .3em;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.menu-floating li a:hover {
+    background-color: rgba(63, 63, 63, .5);
+    color: #fafafa;
+}
