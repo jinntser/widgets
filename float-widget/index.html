@@ -27,6 +27,36 @@
         </ul>
     </nav>
 </div>
+<div class="note">
+    <div class="codebox">
+        <span class="gray">&lt;!-- Add jQuery library --></span><br>
+        &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;<br><br>
+        <span class="gray">&lt;!-- Add float-widget --></span><br>
+        &lt;script type="text/javascript" src="/float-widget.js"&gt;&lt;/script&gt;<br>
+        &lt;link rel="stylesheet" href="/float-widget.css" type="text/css"&gt;
+    </div>
+    <div class="codebox">
+        &lt;script type="text/javascript"&gt;<br>
+        &ensp;&ensp;&ensp;&ensp;$(function () {<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;$('.menu-icon').floatWidget();<br>
+        &ensp;&ensp;&ensp;&ensp;});<br>
+        &lt;/script&gt;<br>
+    </div>
+    <div class="codebox">
+        <span class="gray">// Default values</span><br>
+        settings = {<br>
+        &ensp;&ensp;&ensp;&ensp;offset: 30, <span class="gray">// String, min distance from edges.</span><br>
+        &ensp;&ensp;&ensp;&ensp;menu: '', <span class="gray">// String, css selector.</span><br>
+        &ensp;&ensp;&ensp;&ensp;idle: true, <span class="gray">// Boolean, if放置play.</span><br>
+        &ensp;&ensp;&ensp;&ensp;idleTime: 3000, <span class="gray">// String, if放置play, set idle time.</span><br>
+        &ensp;&ensp;&ensp;&ensp;custom: {<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;menuClass: 'float-widget-menu',<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;widgetClass: 'float-widget',<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;activeClass: ['float-widget-open-t', 'float-widget-open-r', 'float-widget-open-b', 'float-widget-open-l']<br>
+        &ensp;&ensp;&ensp;&ensp;}<br>
+        }
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/float-widget.js"></script>
 <script>

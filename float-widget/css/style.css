@@ -11,6 +11,25 @@ body {
     font-family: '微軟正黑體';
 }
 
+.note {
+    display: block;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.codebox{
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.gray{
+    color: #aaa;
+}
+
 .menu-icon {
     position: fixed;
     top: 40px;
