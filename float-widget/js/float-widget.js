@@ -55,7 +55,7 @@
         if ('createTouch' in document) {
             _target[0].addEventListener('touchstart', _down, false);
         } else {
-            $(document).on({'mousedown': _down});
+            _target.on('mousedown', _down);
         }
 
         //初始化
@@ -160,7 +160,7 @@
 
         function _drag(e) {
             e.preventDefault();
-            if ($menu.length && $menu.is(':visible')) {
+            if ($menu && $menu.length && $menu.is(':visible')) {
                 $menu.hide(300);
                 if ('createTouch' in document) {
                     document.removeEventListener('touchstart', closemenu, false);
@@ -192,7 +192,7 @@
                     widget.idle = null;
                 }, settings.idleTime);
             }
-            if (Math.abs(('createTouch' in document ? e.changedTouches[0].clientX : e.clientX) - widget.drag_s_x) < 3 && Math.abs(('createTouch' in document ? e.changedTouches[0].clientY : e.clientY) - widget.drag_s_y) < 3 && $menu.length) {
+            if ($menu && Math.abs(('createTouch' in document ? e.changedTouches[0].clientX : e.clientX) - widget.drag_s_x) < 3 && Math.abs(('createTouch' in document ? e.changedTouches[0].clientY : e.clientY) - widget.drag_s_y) < 3) {
                 var $target = $(e.target);
                 if (!$target.is($menu) && !$target.parents('.' + menuClass).length && $menu.is(':hidden')) {
                     var midX = (env.w - widget.w) / 2,
